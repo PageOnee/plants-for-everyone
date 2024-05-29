@@ -12,7 +12,7 @@ export const Home = () => {
     const coolImages = [
         {
             header: "Canada",
-            image: "/client/public/images/accordion/accordion_item.jpg",
+            image: "https://plants-for-everyone.onrender.com/images/accordion/accordion_item.jpg",
             text: `Habitad - Tundra`,
         },
         {
