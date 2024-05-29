@@ -1,20 +1,30 @@
-/// Librerias de React
-import { useState } from 'react';
+// Librerias de React
+import React, { useState } from 'react';
 
-/// Componentes
+// Componentes
 import { Modal } from '../modal/Modal';
 
-/// Estilos 
+// Estilos 
 import './InformationCard.css';
 
-// Componente : Tarjeta de Informacion
-export const InformationCard = ({ name, scientificName, imageUrl, description, habitat, uses }) => {
+// Props del componente
+interface InformationCardProps {
+    name: string;
+    scientificName: string;
+    imageUrl: string;
+    description: string;
+    habitat: string;
+    uses: string;
+}
+
+// Componente: Tarjeta de Informacion
+export const InformationCard: React.FC<InformationCardProps> = ({ name, scientificName, imageUrl, description, habitat, uses }) => {
 
     // Estado Modal
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
     // Descripcion
-    const [descriptionToRead, setDescriptionToRead] = useState('');
+    const [descriptionToRead, setDescriptionToRead] = useState<string>('');
 
     const openModal = (fullDescription: string) => {
         setDescriptionToRead(fullDescription);
@@ -31,7 +41,7 @@ export const InformationCard = ({ name, scientificName, imageUrl, description, h
         const text = descriptionToRead;
         const maxLength = 200; // Longitud máxima de caracteres por solicitud
         const chunks = text.match(new RegExp(`.{1,${maxLength}}`, 'g')); // Divide el texto en partes de longitud máxima
-        chunks.forEach(chunk => {
+        chunks?.forEach(chunk => { // Manejar posible nulabilidad de chunks
             const utterance = new SpeechSynthesisUtterance(chunk);
             utterance.lang = 'es-ES';
             window.speechSynthesis.speak(utterance);
@@ -39,12 +49,11 @@ export const InformationCard = ({ name, scientificName, imageUrl, description, h
     };
 
     return (
-
         <div className='information-card col-12 m-4'>
             {/* Encabezado */}
             <header>
                 <h3 className='text-center py-3 d-flex flex-column'>
-                    <span> {name} </span>
+                    <span>{name}</span>
                     <span className="scientificName">{scientificName}</span>
                 </h3>
             </header>
@@ -71,7 +80,7 @@ export const InformationCard = ({ name, scientificName, imageUrl, description, h
                 <div>
                     <header>
                         <h3 className='text-center py-3 d-flex flex-column'>
-                            <span> {name} </span>
+                            <span>{name}</span>
                             <span className="scientificName">{scientificName}</span>
                         </h3>
                     </header>
