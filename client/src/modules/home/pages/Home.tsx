@@ -17,22 +17,22 @@ export const Home = () => {
         },
         {
             header: "New Zealand",
-            image: "public/images/accordion/accordion_item_2.jpg",
+            image: "https://plants-for-everyone.onrender.com/images/accordion/accordion_item_2.jpg",
             text: `Image description`,
         },
         {
             header: "New Zealand",
-            image: "../../../../public/images/accordion/accordion_item_3.jpg",
+            image: "https://plants-for-everyone.onrender.com/images/accordion/accordion_item_3.jpg",
             text: `Image description`,
         },
         {
             header: "New Zealand",
-            image: "../../../../public/images/accordion/accordion_item_4.jpg",
+            image: "https://plants-for-everyone.onrender.com/public/images/accordion/accordion_item_4.jpg",
             text: `Image description`,
         },
         {
             header: "New Zealand",
-            image: "../../../../public/images/accordion/accordion_item_5.jpg",
+            image: "https://plants-for-everyone.onrender.com/images/accordion/accordion_item_5.jpg",
             text: `Image description`,
         },
     ];
