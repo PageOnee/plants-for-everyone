@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url('https://fonts.cdnfonts.com/css/ailerons');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 /* Estilos globales */
 :root {
@@ -16,7 +16,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "Nunito", sans-serif;
     /* font-family: 'Ailerons', sans-serif; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

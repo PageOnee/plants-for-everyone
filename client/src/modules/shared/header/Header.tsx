@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'; // Importa el componente Link desde rea
 /// Estilos
 import './Header.css'
 
-
 // Componente: Encabezado
 export const Header = () => {
 
@@ -24,42 +23,42 @@ export const Header = () => {
                     </div>
 
                     {/* Menu de Navegacion */}
-                    <div className="col-9">
-                        <nav className="p-0">
+                    <nav className="col-9 d-flex flex-row align-items-center justify-content-center p-0">
 
-                            <ul className="d-flex flex-row justify-content-between align-items-center">
+                        <ul className="d-flex flex-row align-items-center my-auto">
 
-                                <li className="item-nav mx-5">
-                                    <Link to="/inicio" className="text-link d-flex flex-row align-items-center" title="Inicio">
-                                        <span className="material-symbols-outlined"> cottage </span>
-                                        <span className='mx-2'> Inicio </span>
-                                    </Link>
-                                </li>
+                            <li className="item-nav mx-5">
+                                <Link to="/inicio" className="text-link d-flex flex-row align-items-center" title="Inicio">
+                                    <span className="material-symbols-outlined"> cottage </span>
+                                    <span className='mx-2'> Inicio </span>
+                                </Link>
+                            </li>
 
-                                <li className="item-nav mx-5">
-                                    <Link to="/catalogo" className="text-link d-flex flex-row align-items-center" title="Catálogo de Plantas">
-                                        <span className="material-symbols-outlined"> deceased </span>
-                                        <span className='mx-2'> Catálogo de Plantas </span>
-                                    </Link>
-                                </li>
+                            <li className="item-nav mx-5">
+                                <Link to="/catalogo" className="text-link d-flex flex-row align-items-center" title="Catálogo de Plantas">
+                                    <span className="material-symbols-outlined"> deceased </span>
+                                    <span className='mx-2'> Catálogo de Plantas </span>
+                                </Link>
+                            </li>
 
-                                <li className="item-nav mx-5">
-                                    <Link to="/acerca-de-nosotros" className="text-link d-flex flex-row align-items-center" title="Acerca de Nosotros">
-                                        <span>  Acerca de Nosotros </span>
-                                    </Link>
-                                </li>
+                            <li className="item-nav mx-5">
+                                <Link to="/acerca-de-nosotros" className="text-link d-flex flex-row align-items-center" title="Acerca de Nosotros">
+                                    <span className="material-symbols-outlined"> info </span>
+                                    <span className='mx-2'> Acerca de Nosotros </span>
+                                </Link>
+                            </li>
 
-                                <li className="item-nav mx-5">
-                                    <Link to="/acerca-de-nosotros" className="text-link d-flex flex-row align-items-center" title="Ajustes">
-                                        <span className="material-symbols-outlined"> settings </span>
-                                        <span className='mx-2'> Ajustes </span>
-                                    </Link>
-                                </li>
+                            <li className="item-nav mx-5">
+                                <Link to="/acerca-de-nosotros" className="text-link d-flex flex-row align-items-center" title="Ajustes">
+                                    <span className="material-symbols-outlined"> settings </span>
+                                    <span className='mx-2'> Ajustes </span>
+                                </Link>
+                            </li>
 
-                            </ul>
+                        </ul>
 
-                        </nav>
-                    </div>
+                    </nav>
+
 
                 </div>
             </div>

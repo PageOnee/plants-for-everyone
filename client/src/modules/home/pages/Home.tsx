@@ -1,4 +1,5 @@
 /// Componentes 
+import { Link } from 'react-router-dom';
 import { Header } from '../../shared/header/Header'
 import { Navbar } from '../../shared/navbar/Navbar';
 import { ImageAccordion } from '../components/accordions/Accordion';
@@ -56,10 +57,10 @@ export const Home = () => {
 
                             <h2 className='text-welcome'>Bienvenido a nuestro catálogo en línea de plantas: tu recurso completo para la jardinería y botánica.</h2>
 
-                            <div className='col-8 redirect-catalog d-flex flex-row justify-content-center align-items-center p-4 ' title='Ir al catalogo de plantas'>
-                                <span>Explorar Catalogo de Plantas</span>
+                            <Link to="/catalogo" className='col-8 redirect-catalog d-flex flex-row justify-content-center align-items-center p-4' title='Ir al catálogo de plantas'>
+                                <span>Explorar Catálogo de Plantas</span>
                                 <span className="material-symbols-outlined mx-2"> arrow_forward </span>
-                            </div>
+                            </Link>
 
                         </article>
 
@@ -83,13 +84,13 @@ export const Home = () => {
 
                         <article className='col-1'></article>
 
-                        <article className='col-3 text-start d-flex flex-column'>
+                        <article className='col-3 text-start d-flex flex-column border-left px-3'>
                             <span className='text-footer'> Victoria amazonica </span>
                             <span>  Especie de planta acuática que se encuentra en la región amazónica de América del Sur. Es conocida por sus enormes hojas circulares que pueden llegar a medir más de 2 metros</span>
                         </article>
 
-                        <article className='col-3 text-center d-flex flex-row align-items-center'>
-                            <img src="../../../../public/icons/flower-svgrepo-com.svg" alt="" width={80} height={80} />
+                        <article className='col-3 text-center d-flex flex-row align-items-center border-left px-3'>
+                            <img src="https://plants-for-everyone.onrender.com/icons/flower-svgrepo-com.svg" alt="" width={80} height={80} />
 
                             <div className='d-flex flex-column ms-3'>
                                 <span className='text-footer'> 256 </span>
@@ -97,8 +98,8 @@ export const Home = () => {
                             </div>
                         </article>
 
-                        <article className='col-3 text-center d-flex flex-row align-items-center'>
-                            <img src="../../../../public/icons/flower-2-svgrepo-com.svg" alt="" width={80} height={80} />
+                        <article className='col-3 text-center d-flex flex-row align-items-center border-left px-3'>
+                            <img src="https://plants-for-everyone.onrender.com/icons/flower-2-svgrepo-com.svg" alt="" width={80} height={80} />
 
                             <div className='d-flex flex-column ms-3'>
                                 <span className='text-footer'> 129 </span>
