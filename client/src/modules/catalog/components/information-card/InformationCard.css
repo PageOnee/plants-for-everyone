@@ -54,5 +54,7 @@
 
 .btn-hablar:hover {
     background: #0d523b;
+    color: white;
+    font-weight: bold;
 
 }
