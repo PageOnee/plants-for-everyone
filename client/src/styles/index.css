@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.cdnfonts.com/css/ailerons');
+
+/* Estilos globales */
+:root {
+    --color-background-light: #eff0f6;
+    --color-background-dark: #0C2D57;
+}
+
+* {
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    /* font-family: 'Ailerons', sans-serif; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+a {
+    text-decoration: none;
+}
+
+col {
+    padding: 0;
+}
+
+row {
+    padding: 0;
+}
