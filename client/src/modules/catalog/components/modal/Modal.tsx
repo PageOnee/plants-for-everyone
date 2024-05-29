@@ -1,7 +1,7 @@
 import React from 'react';
 import './Modal.css';
 
-export const Modal = ({ isOpen, onClose, content }) => {
+export const Modal = ({ isOpen, onClose, content }: { isOpen: boolean, onClose: () => void, content: React.ReactNode }) => {
     if (!isOpen) return null;
 
     return (
