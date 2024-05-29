@@ -57,9 +57,10 @@ export const Home = () => {
 
                             <h2 className='text-welcome'>Bienvenido a nuestro catálogo en línea de plantas: tu recurso completo para la jardinería y botánica.</h2>
 
-                            <Link to="/catalogo" className='col-8 redirect-catalog d-flex flex-row justify-content-center align-items-center p-4' title='Ir al catálogo de plantas'>
+                            <Link to="/catalogo" className='col-8 redirect-catalog d-flex flex-row justify-content-center align-items-center p-4 tooltipp' title='Ir al catálogo de plantas'>
                                 <span>Explorar Catálogo de Plantas</span>
                                 <span className="material-symbols-outlined mx-2"> arrow_forward </span>
+                                <span className='tooltiptext'> Ir a Catalago de Plantas</span>
                             </Link>
 
                         </article>

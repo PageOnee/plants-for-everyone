@@ -56,3 +56,44 @@
         /* Ajusta el interlineado según sea necesario */
     }
 }
+
+.tooltipp {
+    position: relative;
+    display: inline-block;
+}
+
+/* Texto del elemento tooltip */
+.tooltipp .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.tooltipp .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Texto del elemento tooltip en estado Hover */
+.tooltipp:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
