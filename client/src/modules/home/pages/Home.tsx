@@ -27,7 +27,7 @@ export const Home = () => {
         },
         {
             header: "New Zealand",
-            image: "https://plants-for-everyone.onrender.com/public/images/accordion/accordion_item_4.jpg",
+            image: "https://plants-for-everyone.onrender.com/images/accordion/accordion_item_4.jpg",
             text: `Image description`,
         },
         {
