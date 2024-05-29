@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+.home-bg {
+    background: #E0FBE2;
+    width: 100%;
+    height: 100vh;
+}
+
+.text-welcome {
+    font-size: 48px;
+    line-height: 3.3;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.redirect-catalog {
+    border: 1px solid #002140;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.redirect-catalog:hover {
+    border: 1px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background: #002140;
+}

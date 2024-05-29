@@ -2,7 +2,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 /// Paginas
-import { Home } from "./pages/home/Home";
+import { Home } from "./modules/home/pages/Home";
+import { Catalog } from "./modules/catalog/pages/Catalog";
 
 
 // Componente principal :
@@ -18,6 +19,7 @@ function App() {
 
         {/* Path rutas */}
         <Route path="inicio" element={<Home />} />
+        <Route path="catalogo" element={<Catalog />} />
 
         {/* Path para ruta no encontrada */}
         <Route path="*" element={<Navigate to="/inicio" />} />

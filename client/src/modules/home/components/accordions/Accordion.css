@@ -1,0 +1,85 @@
+.image-accordion {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 40px;
+}
+
+.image-accordion-item {
+    position: relative;
+    overflow: hidden;
+    width: 64px;
+    height: 700px;
+    border-radius: 36px;
+    display: flex;
+    align-items: flex-end;
+    opacity: 1 !important;
+    transition: 0.5s;
+}
+
+.image-accordion-item:hover {
+    opacity: 0.75;
+}
+
+.image-accordion :is(h2, p) {
+    margin: 0;
+}
+
+.image-accordion-item h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.image-accordion-item p {
+    color: rgba(255, 255, 255, 0.66);
+}
+
+.image-accordion-item.active {
+    width: 500px;
+    /* Aumenta el ancho del item activo */
+    opacity: 1;
+}
+
+.image-accordion-item .material-symbols-outlined {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.80);
+    background: rgba(255, 255, 255, 0.70);
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.image-accordion-item .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 800px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    padding: 100px 0 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0%), rgba(0, 0, 0, 0.80));
+    transition: opacity 0.25s, visibility 0.25s;
+}
+
+.image-accordion-item.active .content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-accordion-item img {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150%;
+    filter: grayscale(0.6);
+    transition: transform 0.5s;
+}

@@ -1,0 +1,23 @@
+.img-plant {
+    width: 350px;
+    height: 300px;
+    border-radius: 12px;
+
+}
+
+.btn-siguiente {
+    background: #44A093;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.transcript {
+    width: 600px;
+    border-radius: 12px;
+    height: 470px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
