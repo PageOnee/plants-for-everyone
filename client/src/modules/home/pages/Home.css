@@ -28,3 +28,12 @@
     color: white;
     background: #002140;
 }
+
+@media screen and (max-width: 768px) {
+    .text-welcome {
+        font-size: 24px;
+        /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        line-height: 2.0;
+        /* Ajusta el interlineado según sea necesario */
+    }
+}

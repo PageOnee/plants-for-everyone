@@ -11,7 +11,7 @@ export const Header = () => {
     return (
 
         <header>
-            <div className="row p-0 mb-5">
+            <div className="row p-0 mb-5 d-none d-md-block">
                 <div className="col-12 d-flex flex-row align-items-center header py-3 ">
 
                     {/* Titulo */}

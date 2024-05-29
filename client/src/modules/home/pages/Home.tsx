@@ -1,5 +1,6 @@
 /// Componentes 
 import { Header } from '../../shared/header/Header'
+import { Navbar } from '../../shared/navbar/Navbar';
 import { ImageAccordion } from '../components/accordions/Accordion';
 
 /// Estilos
@@ -44,17 +45,18 @@ export const Home = () => {
 
                 {/* Encabezado */}
                 <Header />
+                <Navbar />
 
                 {/* Contenido */}
                 <main className='row'>
-                    <section className='col-12 d-flex flex-row'>
+                    <section className='col-12  d-flex flex-column flex-md-row'>
 
                         {/* Tarjeta de Bienvenida */}
-                        <article className='col-5 d-flex flex-column justify-content-center align-items-center text-center'>
+                        <article className='col-12 col-md-5 d-flex flex-column justify-content-center align-items-center text-center'>
 
                             <h2 className='text-welcome'>Bienvenido a nuestro catálogo en línea de plantas: tu recurso completo para la jardinería y la botánica.</h2>
 
-                            <div className='redirect-catalog d-flex flex-row align-items-center p-4 '>
+                            <div className='col-8 redirect-catalog d-flex flex-row align-items-center p-4 '>
                                 <span>Explorar Catalogo de Plantas</span>
                                 <span className="material-symbols-outlined mx-2"> arrow_forward </span>
                             </div>
@@ -65,7 +67,7 @@ export const Home = () => {
                         <article className='col-1'></article>
 
                         {/* Carrusel de Imagenes */}
-                        <article className='col-6 d-flex flex-row justify-content-center mt-5'>
+                        <article className='col-12 col-md-6 d-flex flex-row justify-content-center mt-5 d-none d-md-block'>
                             <ImageAccordion items={coolImages} />
                         </article>
 
