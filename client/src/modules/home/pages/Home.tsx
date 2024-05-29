@@ -12,7 +12,7 @@ export const Home = () => {
     const coolImages = [
         {
             header: "Canada",
-            image: "public/images/accordion/accordion_item.jpg",
+            image: "images/accordion/accordion_item.jpg",
             text: `Habitad - Tundra`,
         },
         {
