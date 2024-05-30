@@ -15,10 +15,10 @@
     background: #9AD0C2;
     padding: 20px;
     border-radius: 12px;
-    max-width: 500px;
     width: 90%;
+    height: 90%;
     position: relative;
-    overflow-y: auto;
+    overflow-y: scroll;
 
 }
 
