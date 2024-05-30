@@ -10,10 +10,10 @@ export const Catalog = () => {
 
                 <Header />
 
-                <div className='d-flex flex-column mt-5'>
+                <div className='d-flex flex-column mt-0 mt-md-5'>
 
-                    <article className='col-12'>
-                        <h2 className='title-catalog ms-5 my-3'>Catálogo de Plantas</h2>
+                    <article className='col-12  d-flex flex-row align-items-center text-center'>
+                        <h2 className='title-catalog w-100 ms-0 ms-md-5 my-0 my-md-3 text-center text-md-start'>Catálogo de Plantas</h2>
                     </article>
 
                     <article className='col-12'>

@@ -71,7 +71,7 @@ export const InformationCard: React.FC<InformationCardProps> = ({ name, scientif
             </main>
 
             {/* Pie de Pagina */}
-            <footer className='d-flex flex-row justify-content-center'>
+            <footer className='d-flex flex-row justify-content-center mb-3 mb-md-0'>
                 <button className="btn-siguiente" onClick={() => openModal(description)}> Ver detalles </button>
             </footer>
 

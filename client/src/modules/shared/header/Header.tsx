@@ -42,14 +42,14 @@ export const Header = () => {
                             </li>
 
                             <li className="item-nav mx-5">
-                                <Link to="/acerca-de-nosotros" className="text-link d-flex flex-row align-items-center" title="Acerca de Nosotros">
+                                <Link to="/ayuda" className="text-link d-flex flex-row align-items-center" title="Acerca de Nosotros">
                                     <span className="material-symbols-outlined"> info </span>
-                                    <span className='mx-2'> Acerca de Nosotros </span>
+                                    <span className='mx-2'> Preguntas Frecuentes </span>
                                 </Link>
                             </li>
 
                             <li className="item-nav mx-5">
-                                <Link to="/acerca-de-nosotros" className="text-link d-flex flex-row align-items-center" title="Ajustes">
+                                <Link to="/ajustes" className="text-link d-flex flex-row align-items-center" title="Ajustes">
                                     <span className="material-symbols-outlined"> settings </span>
                                     <span className='mx-2'> Ajustes </span>
                                 </Link>

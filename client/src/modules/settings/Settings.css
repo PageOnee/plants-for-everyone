@@ -1,0 +1,62 @@
+.settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.settings-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.settings-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.setting-item {
+    margin-bottom: 15px;
+}
+
+.setting-item label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.setting-item select,
+.setting-item input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.dark-mode {
+    background-color: #333;
+}
+
+.dark-mode .settings-card {
+    background-color: #444;
+    color: #f4f4f4;
+}
+
+.dark-mode .setting-item label {
+    color: #bbb;
+}
+
+.dark-mode .setting-item select,
+.dark-mode .setting-item input[type="checkbox"] {
+    border: 1px solid #555;
+    background-color: #666;
+    color: #f4f4f4;
+}

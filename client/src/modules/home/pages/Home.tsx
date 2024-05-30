@@ -48,6 +48,15 @@ export const Home = () => {
                 <Header />
                 <Navbar />
 
+                <header className='d-block d-md-none my-5'>
+                    <div className="col-12">
+                        <h1 className="d-flex flex-row align-items-center justify-content-center">
+                            <img src="/favicon.svg" width={50} height={50} alt="Icono de la pagina web" />
+                            <span className="mx-4 title-text">Plantas para Todos</span>
+                        </h1>
+                    </div>
+                </header>
+
                 {/* Contenido */}
                 <main className='row'>
                     <section className='col-12  d-flex flex-column flex-md-row'>
@@ -77,7 +86,7 @@ export const Home = () => {
                 </main>
 
                 <footer>
-                    <section className='col-12 d-flex flex-row justify-content-between mt-5 py-4 px-5 footer-home'>
+                    <section className='col-12 d-flex flex-row justify-content-between mt-5 py-4 px-5 footer-home d-none d-md-block'>
 
                         <article className='col-1 text-center font-footer'>
                             <p className='text-footer'>Estadisticas del Dia</p>

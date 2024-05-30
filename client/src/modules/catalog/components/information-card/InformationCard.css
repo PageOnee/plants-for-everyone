@@ -58,3 +58,26 @@
     font-weight: bold;
 
 }
+
+/* Estilo para pantallas pequeñas (celulares) */
+@media only screen and (max-width: 600px) {
+    .information-card {
+        width: 95%;
+        /* Ajusta el ancho para que sea un porcentaje del contenedor */
+        height: auto;
+        /* Permite que la altura se ajuste automáticamente */
+        margin: 0 auto;
+        /* Centra la tarjeta en la pantalla */
+        border-radius: 8px;
+        /* Ajusta el borde redondeado */
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        /* Reduce la sombra para móviles */
+    }
+
+    .img-plant {
+        width: 90%;
+        height: 300px;
+        border-radius: 12px;
+    }
+
+}
