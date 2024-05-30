@@ -77,9 +77,9 @@ export const InformationCard: React.FC<InformationCardProps> = ({ name, scientif
 
             {/* Componente : Modal */}
             <Modal isOpen={isModalOpen} onClose={closeModal} content={
-                <div className='my-5'>
+                <div className='my-2 my-md-5'>
                     <header>
-                        <h3 className='text-center py-3 d-flex flex-column'>
+                        <h3 className='text-center py-0 py-md-3 d-flex flex-column'>
                             <span>{name}</span>
                             <span className="scientificName">{scientificName}</span>
                         </h3>

@@ -85,8 +85,8 @@ export const Home = () => {
                     </section>
                 </main>
 
-                <footer>
-                    <section className='col-12 d-flex flex-row justify-content-between mt-5 py-4 px-5 footer-home d-none d-md-block'>
+                <footer className='d-none d-md-block'>
+                    <section className='col-12 d-flex flex-row justify-content-between mt-5 py-4 px-5 footer-home '>
 
                         <article className='col-1 text-center font-footer'>
                             <p className='text-footer'>Estadisticas del Dia</p>
